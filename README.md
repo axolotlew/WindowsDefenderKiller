@@ -6,13 +6,13 @@ Menu-driven PowerShell helper for applying five Microsoft Defender disabling met
 Run directly from a hosted raw URL with `Invoke-RestMethod` piped to `Invoke-Expression` (replace `<owner>` and branch if different):
 
 ```powershell
-irm "https://raw.githubusercontent.com/<owner>/WindowsDefenderKiller/main/windows-defender-killer.ps1" | iex
+irm "https://raw.githubusercontent.com/axolotlew/WindowsDefenderKiller/main/windows-defender-killer.ps1" | iex
 ```
 
 Alternative PowerShell alias:
 
 ```powershell
-iwr "https://raw.githubusercontent.com/<owner>/WindowsDefenderKiller/main/windows-defender-killer.ps1" | iex
+iwr "https://raw.githubusercontent.com/axolotlew/WindowsDefenderKiller/main/windows-defender-killer.ps1" | iex
 ```
 
 > Tip: Enable TLS 1.2+ if your environment defaults lower:
