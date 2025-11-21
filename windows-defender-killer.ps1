@@ -17,11 +17,13 @@ function Write-Log {
     )
     $timestamp = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
     $entry = "[$timestamp][$Level] $Message"
-    Write-Host $entry -ForegroundColor (switch ($Level) {
+    $foreground = switch ($Level) {
         'INFO' { 'White' }
         'WARN' { 'Yellow' }
         'ERROR' { 'Red' }
-    })
+        default { 'White' }
+    }
+    Write-Host $entry -ForegroundColor $foreground
     Add-Content -Path $LogPath -Value $entry
 }
 
